@@ -7,6 +7,7 @@
     {% csrf_token %}
     <button type="submit">Log out</button>
 </form>
+<p><a class="btn btn-primary" href="{% url 'article_list' %}">View all articles</a></p>
 {% else %}
 <a href="{% url 'login' %}">Log in</a>
 <a href="{% url 'signup' %}">Sign up</a>
